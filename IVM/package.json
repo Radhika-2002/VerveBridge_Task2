@@ -1,0 +1,29 @@
+{
+  "name": "m-pos",
+  "version": "1.0.1",
+  "description": "a minimal point of sale system for laptop, desktop; extendable to smart phones by connecting to wifi",
+  "main": "mpos.js",
+  "scripts": {
+    "start": "node mpos.js",
+    "start-express": "node mpos-express.js",
+    "dev": "nodemon mpos.js",
+    "lint": "npx standard *.js ./api/*.js ./controllers/*.js ./routes/*.js ./gui/js/inventory.js ./gui/js/transaction.js ./gui/js/visual.js ./gui/js/table.js"
+  },
+  "author": "Mordecai Velasco",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/static": "^7.0.4",
+    "bcrypt": "^5.1.1",
+    "better-sqlite3": "^11.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fastify": "^4.28.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "standard": "^17.1.0"
+  }
+}

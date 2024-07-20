@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/globals.css">
+  <link rel="stylesheet" href="../css/text.css">
+  <link rel="stylesheet" href="../css/gui-button.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  
+  <title>Main Menu</title>
+  
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+    .main {
+      min-height: calc(100vh - 80px);
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    header {
+      text-align: center;
+      margin: 20px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #f1f1f1;
+      font-size: 14px;
+      color: #555;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .gbtn {
+      margin: 10px 0;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .gbtn img {
+      display: block;
+      margin: 0 auto 10px;
+    }
+    .gbtn h2 {
+      margin: 0 0 10px;
+      font-size: 24px;
+      text-align: center;
+    }
+    .gbtn p {
+      margin: 0;
+      font-size: 16px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Heading -->
+  <header>
+    <h1>Inventory Management System</h1>
+  </header>
+  
+  <div class="main">
+    <a href="/gui/inventory">
+      <div class="gbtn cblue">
+        <img src="../img/inventory-white.svg" alt="Inventory">
+        <h2>Inventory</h2>
+        <p>
+          Manage your remaining products & items here.
+          Represent your inventory by tallying product quantities.
+          Shows status of inventory like item quantity.
+        </p>
+      </div>
+    </a>
+  
+    <a href="/gui/transaction">
+      <div class="gbtn cred">
+        <img src="../img/transactions-white.svg" alt="Transaction">
+        <h2>Transaction</h2>
+        <p>
+          Record products during sales.
+          Automatically update your inventory.
+          This feature also offers basic calculations during transactions.
+        </p>
+      </div>
+    </a>
+  
+    <a href="/gui/visual">
+      <div class="gbtn cgreen">
+        <img src="../img/data-visual-white.svg" alt="Data Visualization">
+        <h2>Data Visualization</h2>
+        <p>
+          Visualize your data with graphical charts.
+          Gives visual insights to your sales.
+        </p>
+      </div>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made by @Radhika Katiyara</p>
+  </footer>
+</body>
+</html>
